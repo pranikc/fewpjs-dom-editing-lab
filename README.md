@@ -80,8 +80,11 @@ Enough chit-chat, let's write some HTML!
 First, we need a way to view the results of our HTML in a browser.
 
 If you're working on your own machine, from the terminal in the directory you're
-working in, run `open index.html` to open up a copy of the file in your browser. 
-Or, run `explorer.exe index.html` if you are using a WSL/Ubuntu local environment.
+working in, run `open index.html` to open up a copy of the file in your browser. Or, run `explorer.exe index.html` if you are using a WSL/Ubuntu local environment.
+
+If you are working in the in-browser IDE, type `httpserver` from the console to
+start up a temporary web server, and copy the URL provided into the browser's URL
+bar to view `index.html`.
 
 Just to speed things up a bit, paste the following code into `index.html`:
 
@@ -117,7 +120,7 @@ child-node has appeared underneath `body`. You can use the
 [disclosure triangle](https://en.wikipedia.org/wiki/Disclosure_widget) to see
 which children are wrapped or nested within the `body` tag.
 
-![disclosure triangle](https://curriculum-content.s3.amazonaws.com/phase-1/dom-editing-lab/disclosure-triangle.png)
+![Image of Recommendation](https://curriculum-content.s3.amazonaws.com/phase-1/dom-editing-lab/disclosure-triangle.png)
 
 Next, we'll add a paragraph below the title. We'll also add some highlighted
 bits of text to the paragraph to make it stand out a little.
@@ -192,6 +195,22 @@ That's a _lot_ of nesting.
 
 Look again at the Elements tab. Expand out all the children of the `table`.
 This is the DOM tree!
+
+## Saving Your Work Remotely
+
+Currently, the work you've done on this assignment is only on your local
+machine. To preserve your solution on your GitHub fork, you will need to stage the
+changes you've made, commit them, and push the commit up to GitHub. Use
+the following commands to do this:
+
+```sh
+git add .
+git commit -m "Completed assignment"
+git push
+```
+
+If you visit your fork on GitHub, you should now see that _you've_ made the most
+recent commit, and your code will be present in the files.
 
 ## Conclusion
 
